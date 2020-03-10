@@ -90,11 +90,9 @@ const resetBoard = () => {
       // collects all of the "td" elements into an HTML Collection: https://www.w3schools.com/jsref/dom_obj_htmlcollection.asp  
     
   // @TODO-3.5: MIX & MATCH, You will need the following pieces of code to build that line:
-  // squares
   // .getElementsByTagName("TD")
-  // =
   // document
-  // const
+  const squares = document.getElementsByTagName("TD")
   
   // loops over the HTML Collection of TDs and clears out the Xs and Os
   for (i=0; i < squares.length; i++) {
@@ -103,6 +101,6 @@ const resetBoard = () => {
     console.log(squares[i].id)
 
     // sets the innerHTML to null to replace the "X" or "O"
-    squares[i].innerHTML = null
+    squares[i].innerHTML = ""
   }  
 }
